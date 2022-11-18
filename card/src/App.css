@@ -1,0 +1,98 @@
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(30, 38%, 92%);
+}
+
+
+.card {
+  margin-top: 3rem;
+  width: 375px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 10px 13px -7px #000000, 1px 6px 0px -23px rgba(0,0,0,0);
+  background-color: white;
+}
+.im-mobile{
+  width: 375px;
+  border-radius: 10px 10px 0 0;
+}
+
+.button{
+  width: 90%;
+  border-radius: 10px;
+  background-color: hsl(158, 36%, 37%);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-style: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.button:hover{
+  cursor: pointer;
+}
+
+.paragraphe{
+  color: hsl(228, 12%, 48%);
+  padding-left: 1rem;
+  text-align: start;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.paragraphe2{
+  color: hsl(228, 12%, 48%);
+  padding-left: 1rem;
+  text-align: start;
+  line-height: 200%;
+}
+.titre{
+  color: hsl(212, 21%, 14%);
+  padding-left: 1rem;
+  text-align: start;
+  font-family: 'Fraunces', serif;
+}
+
+.prix{
+  font-family: 'Fraunces', serif;
+  padding-left: 1rem;
+  text-align: start;
+  color: hsl(158, 36%, 37%);
+}
+
+.prixB{
+  padding-left: 1rem;
+  text-align: start;
+  font-size: small;
+  color: hsl(228, 12%, 48%);
+}
+
+
+@media screen and (min-width: 1200px) {
+  .card {
+    margin-top: 5rem;
+    width: 600px;
+    display: flex;
+  }
+  .im-mobile{
+    width: 300px;
+    border-radius: 10px 0 0 10px;
+    content: url(./image-product-desktop.jpg);
+  }
+  .paragraphe2{
+    padding: 1rem;
+  }
+  .titre{
+    padding: 1rem;
+  }
+  
+  .prix{
+    padding: 1rem;
+  }
+  
+  .prixB{
+    padding: 1rem;
+  }
+}
